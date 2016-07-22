@@ -16,41 +16,76 @@ $waterloo: #779999;
 $malta: #bbaa99;
 $bone: #ddccbb;
 $coral-reef: #ccbbaa;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body * {
+  font-size: 1em;
+}
+
 body {
   color: $texas-rose;
   background-color: $tuna;
+  margin: 1em 10%;
+  background-image: url(../img/background.gif);
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: repeat-x;
+  max-width: 80em;
+  font-size: 76%;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
-a:link {
-  color: $gun-powder;
-  background-color: $porsche;
+a {
+  font-weight: bold;
+  text-decoration: none;
+  &:link {
+    color: $gun-powder;
+    background-color: $porsche;
+  }
+  &:visited {
+    color: $pickled-bluewood;
+    background-color: $porsche;
+  }
+  &:hover {
+    color: $dolphin;
+    background-color: $texas-rose;
+  }
+  &:active {
+    color: $storm-gray;
+    background-color: $flax;
+  }
 }
 
-a:visited {
-  color: $pickled-bluewood;
-  background-color: $porsche;
+h1 {
+  font-family: "Georgia", "Times New Roman", sans-serif;
+  font: 2.4em normal;
 }
 
-a:hover {
-  color: $dolphin;
-  background-color: $texas-rose;
+h2 {
+  font-family: "Georgia", "Times New Roman", sans-serif;
+  font: 1.8em normal;
+  margin-top: 1em;
 }
 
-a:active {
-  color: $storm-gray;
-  background-color: $flax;
+h3 {
+  font-family: "Georgia", "Times New Roman", sans-serif;
+  font: 1.4em normal;
+  margin-top: 1em;
 }
 
 header {
   color: $flax;
   background-color: $tuna;
   border-color: $dolphin;
-}
-
-nav {
-  color: $cape-code;
-  background-color: $slate-gray;
-  border-color: $dolphin;
+  background-image: url(../img/guitarist.gif);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  border-width: .1em;
+  border-style: solid;
+  border-bottom-width: 0;
 }
 
 .content {
@@ -59,42 +94,90 @@ nav {
   border-color: $dolphin;
 }
 
-nav ul {
-  border-color: $santas-gray;
+nav {
+  color: $cape-code;
+  background-color: $slate-gray;
+  border-color: $dolphin;
+  background-image: url(../img/navbar.gif);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  border-width: .1em;
+  border-style: solid;
+  border-bottom-width: 0;
+  border-top-width: 0;
+  padding-left: 10%;
+  font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  ul {
+    border-color: $santas-gray;
+    width: 100%;
+    overflow: hidden;
+    border-left-width: .1em;
+    border-left-style: solid;
+  }
+  a:link,
+  a:visited {
+    color: $titan-white;
+    background-color: transparent;
+    border-color: $santas-gray;
+  }
+  a:hover {
+    color: $gun-powder;
+    background-color: $porsche;
+  }
+  a:active {
+    color: $dolphin;
+    background-color: $flax;
+  }
+  a.here:link,
+  a.here:visited,
+  a.here:hover,
+  a.here:active {
+    color: $titan-white;
+    background-color: $waterloo;
+  }
+  li {
+    display: inline;
+    a {
+      display: block;
+      float: left;
+      padding: .5em 2em;
+      border-right: .1em solid;
+    }
+  }
 }
 
-nav a:link,
-nav a:visited {
-  color: $titan-white;
-  background-color: transparent;
-  border-color: $santas-gray;
+.content {
+  border-width: .1em;
+  border-style: solid;
+  border-top-width: 0;
+  padding: 2em 10%;
+  line-height: 1.8em;
+  line-height: 1.8em;
+  img {
+    border-color: $malta;
+    outline-color: $bone;
+    border-width: .1em;
+    border-style: solid;
+    outline-width: .1em;
+    outline-style: solid;
+  }
+  p {
+    margin: 1em 0;
+  }
 }
 
-nav a:hover {
-  color: $gun-powder;
-  background-color: $porsche;
-}
-
-nav a:active {
-  color: $dolphin;
-  background-color: $flax;
-}
-
-nav a.here:link,
-nav a.here:visited,
-nav a.here:hover,
-nav a.here:active {
-  color: $titan-white;
-  background-color: $waterloo;
-}
-
-.content img {
-  border-color: $malta;
-  outline-color: $bone;
-}
-
-#imagegallery a {
-  background-color: transparent;
+#imagegallery {
+  a {
+    background-color: transparent;
+  }
+  li {
+    list-style-type: none;
+    display: inline;
+  }
 }
 
 th {
@@ -102,17 +185,97 @@ th {
   background-color: $cape-code;
 }
 
-tr td {
-  color: $steel-gray;
-  background-color: $porsche;
+tr {
+  td {
+    color: $steel-gray;
+    background-color: $porsche;
+  }
 }
 
-tr.odd td {
-  color: $steel-gray;
-  background-color: $flax;
+tr.odd {
+  td {
+    color: $steel-gray;
+    background-color: $flax;
+  }
 }
 
-tr.highlight td {
-  color: $steel-gray;
-  background-color: $coral-reef;
+tr.highlight {
+  td {
+    color: $steel-gray;
+    background-color: $coral-reef;
+  }
+}
+
+.about header {
+  background-image: url(../img/lineup.gif);
+}
+
+.photos header {
+  background-image: url(../img/basshead.gif);
+}
+
+.live header {
+  background-image: url(../img/bassist.gif);
+}
+
+.contact header {
+  background-image: url(../img/drummer.gif);
+}
+
+#slideshow {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+img#frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-width: 0;
+  outline-width: 0;
+}
+
+img#preview {
+  position: absolute;
+  border-width: 0;
+  outline-width: 0;
+}
+
+dl {
+  overflow: hidden;
+}
+
+dt {
+  float: left;
+}
+
+dd {
+  float: left;
+}
+
+label {
+  display: block;
+}
+
+fieldset {
+  border: 0;
+}
+
+td {
+  padding: .5em 3em;
+}
+
+dt {
+  margin-right: 1em;
+}
+
+dd {
+  margin-right: 3em;
+}
+
+textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
 }
