@@ -1,21 +1,5 @@
-$texas-rose: #ffbb55;
-$tuna: #333344;
-$porsche: #eebb66;
-$gun-powder: #444455;
-$pickled-bluewood: #334455;
-$dolphin: #666677;
-$storm-gray: #777788;
-$flax: #eecc88;
-$cape-code: #445555;
-$slate-gray: #778899;
-$steel-gray: #222233;
-$almond: #eeddcc;
-$santas-gray: #9999aa;
-$titan-white: #eeeeff;
-$waterloo: #779999;
-$malta: #bbaa99;
-$bone: #ddccbb;
-$coral-reef: #ccbbaa;
+@import "variables";
+@import "nav";
 * {
   padding: 0;
   margin: 0;
@@ -92,62 +76,6 @@ header {
   color: $steel-gray;
   background-color: $almond;
   border-color: $dolphin;
-}
-
-nav {
-  color: $cape-code;
-  background-color: $slate-gray;
-  border-color: $dolphin;
-  background-image: url(../img/navbar.gif);
-  background-position: bottom left;
-  background-repeat: repeat-x;
-  border-width: .1em;
-  border-style: solid;
-  border-bottom-width: 0;
-  border-top-width: 0;
-  padding-left: 10%;
-  font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
-  a {
-    text-decoration: none;
-    font-weight: bold;
-  }
-  ul {
-    border-color: $santas-gray;
-    width: 100%;
-    overflow: hidden;
-    border-left-width: .1em;
-    border-left-style: solid;
-  }
-  a:link,
-  a:visited {
-    color: $titan-white;
-    background-color: transparent;
-    border-color: $santas-gray;
-  }
-  a:hover {
-    color: $gun-powder;
-    background-color: $porsche;
-  }
-  a:active {
-    color: $dolphin;
-    background-color: $flax;
-  }
-  a.here:link,
-  a.here:visited,
-  a.here:hover,
-  a.here:active {
-    color: $titan-white;
-    background-color: $waterloo;
-  }
-  li {
-    display: inline;
-    a {
-      display: block;
-      float: left;
-      padding: .5em 2em;
-      border-right: .1em solid;
-    }
-  }
 }
 
 .content {
